@@ -3,8 +3,8 @@ import { requestDelivery,getRequestDelivery,getAllRequestDelivery } from "../con
 
 const deliveryRouter = express.Router();
 
-deliveryRouter.get("/api/get/delivery", getRequestDelivery);
-deliveryRouter.post("/api/delivery/request", requestDelivery);
-deliveryRouter.get("/api/get/all/deliverys", getAllRequestDelivery);
+deliveryRouter.get("/get/delivery", getRequestDelivery);
+deliveryRouter.post("/delivery/request", requestDelivery);
+deliveryRouter.get("/get/all/deliverys", getAllRequestDelivery);
 
 export default deliveryRouter;
