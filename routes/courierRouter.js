@@ -3,6 +3,6 @@ import { handleCourierLogin } from "../controllers/courierController.js";
 
 const courierRouter = express.Router();
 
-courierRouter.post("/api/courier/login", handleCourierLogin);
+courierRouter.post("/courier/login", handleCourierLogin);
 
 export default courierRouter;
