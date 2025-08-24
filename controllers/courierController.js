@@ -33,6 +33,7 @@ export const handleCourierLogin = async (req, res) => {
       code: 200,
       success: true,
       courier: {
+        _id: courier._id,
         name: courier.name,
         photo: courier.photo,
         email: courier.email,
