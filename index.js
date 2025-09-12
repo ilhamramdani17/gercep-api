@@ -28,7 +28,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 const httpServer = http.createServer(app);
 
-export const io = new Server(httpServer, {
+const io = new Server(httpServer, {
   cors: {
     origin: "*",
     methods: ["GET", "POST"],
@@ -45,5 +45,8 @@ app.use(deliveryRouter);
 httpServer.listen(PORT, () => {
   console.log(`Server is running at http://localhost:${PORT}`);
 });
+
+export default io;
+
 
 
